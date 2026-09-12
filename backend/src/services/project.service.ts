@@ -53,13 +53,13 @@ const canAccessProject = async (
     "You are not allowed to access this project"
   );
 };
-
 export const createProject = async (
   name: string,
   description: string | undefined,
-  clientId: string | undefined,
+  clientId: string,
   createdById: string
 ) => {
+
   const project = await prisma.project.create({
     data: {
       name,
@@ -68,9 +68,7 @@ export const createProject = async (
         description,
       }),
 
-      ...(clientId !== undefined && {
-        clientId,
-      }),
+      clientId,
 
       createdById,
     },

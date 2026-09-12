@@ -29,7 +29,6 @@ export const updateProjectSchema = z
 
     clientId: z
       .string()
-      .uuid("Client ID must be a valid UUID")
-      .optional(),
+      .uuid("Client ID must be a valid UUID"),
   })
   .strict();
