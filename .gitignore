@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+dist-ssr/
+
+# Generated TypeScript/source maps
+*.d.ts
+*.d.ts.map
+*.js.map
+
+# Generated Prisma client
+backend/src/generated/
+
+# AI/tool generated folders
+backend/.agents/
+backend/.claude/
+backend/.windsurf/
+
+# Editor / OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.local
+
+# Backend compiled JavaScript output
+backend/src/**/*.js
+backend/src/**/*.js.map
+backend/src/**/*.d.ts
+backend/src/**/*.d.ts.map

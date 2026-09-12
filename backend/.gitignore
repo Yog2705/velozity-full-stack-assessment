@@ -1,0 +1,29 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# TypeScript generated output
+*.d.ts
+*.d.ts.map
+*.js.map
+
+# Prisma generated output
+backend/src/generated/
+
+# Tool/AI generated folders
+backend/.agents/
+backend/.claude/
+backend/.windsurf/
